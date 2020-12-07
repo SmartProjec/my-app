@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="vertical"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+
+        <TextView
+            android:id="@+id/PhotoType"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Photo Type"
+            android:textColor="#424242"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_margin="16dp">
+
+        <TextView
+            android:id="@+id/Camera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Take Photo"
+            android:gravity="center"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:fontFamily="@font/helvetica_light"
+            android:drawableBottom="@drawable/ic_camera_alt_black_24dp"
+            />
+
+    </LinearLayout>
+
+
+    <GridView
+        android:id="@+id/ImageList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="50dp"
+        android:dividerHeight="4dp"
+        android:numColumns="3"
+        android:divider="#ffffff">
+
+    </GridView>
+
+
+</LinearLayout>
