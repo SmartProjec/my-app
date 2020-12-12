@@ -30,6 +30,8 @@
         android:hint="Enter Name"
         android:textColor="#000"
         android:textSize="16sp"
+        android:textColorHint="#BCB9B9"
+
         android:inputType="textEmailAddress"
         android:singleLine="true"
         android:gravity="center|left"
@@ -48,6 +50,8 @@
         android:textSize="16sp"
         android:inputType="textEmailAddress"
         android:singleLine="true"
+        android:textColorHint="#BCB9B9"
+
         android:gravity="center|left"
         android:drawableLeft="@drawable/ic_mail_black_24dp"
         android:drawablePadding="10dp"
@@ -62,6 +66,8 @@
         android:hint="Enter Password"
         android:textColor="#000"
         android:textSize="16sp"
+        android:textColorHint="#BCB9B9"
+
         android:inputType="textPassword"
         android:singleLine="true"
         android:gravity="center|left"
@@ -77,6 +83,8 @@
         android:layout_marginRight="40dp"
         android:hint="Confirm Password"
         android:textColor="#000"
+        android:textColorHint="#BCB9B9"
+
         android:textSize="16sp"
         android:inputType="textPassword"
         android:singleLine="true"

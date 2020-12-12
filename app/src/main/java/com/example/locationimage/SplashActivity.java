@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
         sharedPreferences=getSharedPreferences("Main", Context.MODE_PRIVATE);
         editor=sharedPreferences.edit();
 
-        cdt=new CountDownTimer(3000,2000) {
+        cdt=new CountDownTimer(3000,500) {
             @Override
             public void onTick(long millisUntilFinished) {
 
@@ -34,12 +34,20 @@ public class SplashActivity extends AppCompatActivity {
             public void onFinish() {
 
 
-                    Intent i = new Intent(SplashActivity.this, LoginActivity.class);
+                startActivity(new Intent(SplashActivity.this,LoginActivity.class));
+                finish();
+
+               /* if(sharedPreferences.getInt("Key",0)==1)
+                {
+                    Intent i = new Intent(SplashActivity.this, MainActivity.class);
                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+
+                    // Add new Flag to start new Activity
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(i);
-                    finish();
 
+                    finish();
+                }*/
 
 
 
@@ -50,7 +58,7 @@ public class SplashActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-        if(sharedPreferences.getInt("Key",0)==1)
+       /* if(sharedPreferences.getInt("Key",0)==1)
         {
             Intent i = new Intent(SplashActivity.this, MainActivity.class);
             i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -71,6 +79,6 @@ public class SplashActivity extends AppCompatActivity {
             startActivity(i);
 
             finish();
-        }
+        }*/
     }
 }

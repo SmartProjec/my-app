@@ -117,14 +117,13 @@ public class LoginActivity extends AppCompatActivity {
                         editor.commit();
                         editor.apply();
 
+                        finish();
                         Intent i = new Intent(LoginActivity.this, MainActivity.class);
                         i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 
                         // Add new Flag to start new Activity
                         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                         startActivity(i);
-
-                        finish();
 
                         Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
 

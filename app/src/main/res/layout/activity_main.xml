@@ -59,6 +59,7 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="80dp"
+        android:textColor="#000"
         android:text="Personal Photo"/>
     <android.widget.Button
         android:id="@+id/Type2"
@@ -68,6 +69,8 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="80dp"
+        android:textColor="#000"
+
         android:text="Office Photo"/>
 
     <android.widget.Button
@@ -78,6 +81,8 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_marginTop="80dp"
+        android:textColor="#000"
+
         android:text="Important Photo"/>
 
 

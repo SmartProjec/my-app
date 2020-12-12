@@ -180,14 +180,14 @@ public class SignupActivity extends AppCompatActivity {
                     editor.commit();
                     editor.apply();
 
+                    finish();
+
                     Intent i = new Intent(SignupActivity.this, MainActivity.class);
                     i.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-
                     // Add new Flag to start new Activity
                     i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                     startActivity(i);
 
-                    finish();
 
                     Toast.makeText(getApplicationContext(),"Sign Up Success",Toast.LENGTH_SHORT).show();
 
@@ -206,7 +206,7 @@ public class SignupActivity extends AppCompatActivity {
         });
     }
 
-    @Override
+    /*@Override
     protected void onStart() {
         super.onStart();
         if(sharedPreferences.getInt("Key",0)==1)
@@ -220,5 +220,5 @@ public class SignupActivity extends AppCompatActivity {
 
             finish();
         }
-    }
+    }*/
 }
